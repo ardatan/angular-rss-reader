@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { RSSFeedComponent } from './rss-feed.component';
+
+import { RSSParserService } from './rss-parser.service';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RSSFeedComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    RSSParserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
